@@ -3,6 +3,8 @@
    "how to change link color." */
 
 body {
+  display: flex;
+  flex-direction: column;
   background-color: #222; /* Darker gray background */
   color: white; /* White text color */
   font-family: "Times New Roman", Times, serif; /* Use Times font */
@@ -10,13 +12,47 @@ body {
   padding: 0; /* Remove default padding */
 }
 
-h1, h2, h3, h4, h5, h6 {
-  padding-left: 20px; /* 20px padding for headings */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
+.main {
+  width: device-width;
+  display: flex;
+  flex: 1; /* Makes the main area take up the remaining space */
+}
+
+.navigation {
+  width: 150px;
+  padding: 10px;
+  height: 100%;
+  top: 0;
+}
+
+
+.content {
+  flex-grow: 1;
+  padding: 10px;
+  margin-left: 10px;
+  max-width: 100%;
+}
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
 p {
-  text-align: left; /* Left-align the text */
-  padding-left: 40px; /* 40px padding for other text */
+  text-align: block;
+  padding-left: 20px;
+  padding-right: 40px;
 }
 
 a {
@@ -24,7 +60,8 @@ a {
 }
 
 img{
-  padding-left: 40px; /* 20px padding for headings */
+  max-width: 90%; /* Ensures images don't exceed the container width */
+  height: auto; /* Keeps the aspect ratio intact */
 }
 
 .no-style {
