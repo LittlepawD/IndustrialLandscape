@@ -35,10 +35,17 @@ body {
 }
 
 .content {
-  flex-grow: 1;
   max-width: 1400px;
   padding: 10px;
   margin: auto;
+  width: 100%;
+}
+
+.img_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
   width: 100%;
 }
 
@@ -55,8 +62,27 @@ p {
   padding-right: 40px;
 }
 
+.desc{
+  padding-left: 0px;
+  text-align: center;
+}
+
 a {
     color: rgba(211, 211, 211, 0.726);
+}
+
+
+.img_set{
+  display: flex; /* Use flexbox to align images next to each other */
+  flex-wrap: wrap; /* Allow images to wrap onto the next line if necessary */
+  gap: 10px; /* Space between images */
+  justify-content: center; /* Align images to the start */
+  margin: auto;
+}
+
+.img_set img{
+  min-width: 300px;
+  width: 32%;
 }
 
 img{
