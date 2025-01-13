@@ -89,6 +89,8 @@ img{
   width: 100%;
   max-width: 1200px; /* Ensures images don't exceed the container width */
   height: auto; /* Keeps the aspect ratio intact */
+  margin-top: 5px;
+  margin-bottom: 5px
 }
 
 .no-style {
